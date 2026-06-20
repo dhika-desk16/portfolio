@@ -144,7 +144,7 @@ export default function Page() {
               powered by majakarsa
             </p>
             <h1 className="text-5xl md:text-7xl font-semibold text-slate-900 dark:text-white leading-tight mb-6">
-              MajakarsaDigital
+              MAJAKARSADIGITAL
             </h1>
             <p className="text-lg md:text-xl text-slate-700 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
               Dari website, aplikasi mobile, hingga sistem enterprise - kami hadirkan
@@ -256,7 +256,7 @@ export default function Page() {
                     Lihat Portfolio
                   </a>
                   <a
-                    href="#contact"
+                    href="/cara-order"
                     className="px-5 py-3.5 border border-slate-900/30 dark:border-white/30 text-slate-900 dark:text-white font-semibold rounded-full hover:bg-slate-900/10 dark:hover:bg-white/10 transition-colors"
                   >
                     Cara Order
