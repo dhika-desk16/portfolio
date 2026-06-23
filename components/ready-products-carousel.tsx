@@ -3,12 +3,10 @@
 import { useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Product } from '@/lib/interfaces/products.inteface'
 
-interface Props {
-  products: any[]
-}
 
-export function ReadyProductsCarousel({ products }: Props) {
+export function ReadyProductsCarousel({ products }: { products: Product[] }) {
   const readyProducts = products.filter(
     (product) => product.type?.toLowerCase() === 'ready'
   )
@@ -81,13 +79,15 @@ export function ReadyProductsCarousel({ products }: Props) {
                   : 'border-slate-200 dark:border-white/10 group-hover:border-slate-300 dark:group-hover:border-white/20 group-hover:shadow-lg dark:group-hover:shadow-black/30'
                   } group-hover:-translate-y-1`}
               >
-                <Image
-                  src={product.image_url}
-                  alt={product.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                {product.image_url && (
 
+                  <Image
+                    src={product.image_url}
+                    alt={product.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                )}
                 {product.discount_percent && (
                   <span className="absolute top-3 left-3 z-10 text-[9px] font-bold px-2 py-1 rounded-full bg-red-500 text-white">
                     -{product.discount_percent}%

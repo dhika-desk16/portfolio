@@ -1,25 +1,25 @@
+import { Product } from '@/lib/interfaces/products.inteface'
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface Props {
-  products: any[]
-}
 
-export function ProductCard({ product }: { product: Props }) {
+export function ProductCard({ product }: { product: Product }) {
   return (
     <div className="group relative rounded-sm border border-slate-200 dark:border-white/40 bg-white dark:bg-white/[0.02] hover:border-slate-300 dark:hover:border-white/10 hover:shadow-lg dark:hover:shadow-black/30 hover:-translate-y-0.5 transition-all duration-300 overflow-hidden cursor-pointer">
 
       {/* Thumbnail */}
       <div className="relative h-56 sm:h-64 bg-slate-100 dark:bg-white/[0.03] overflow-hidden">
+        {product.image_url && (
         <Image
           src={product.image_url}
           alt={product.name}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        {product.discount_price && (
+        )}
+        {product.discount_percent && (
           <span className="absolute top-3 left-3 text-[10px] font-bold px-2 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white">
-            {product.discount_price}
+            {product.discount_percent}
           </span>
         )}
         {product.badge && (
@@ -63,14 +63,14 @@ export function ProductCard({ product }: { product: Props }) {
         <div className="flex items-center justify-between pt-3 border-t border-slate-100 dark:border-white/5 gap-2">
           <div className="min-w-0">
             <p className="text-slate-900 dark:text-white font-bold text-sm truncate">{product.price}</p>
-            {product.originalPrice && (
-              <p className="text-slate-400 dark:text-gray-600 text-[11px] line-through mt-0.5 truncate">{product.originalPrice}</p>
+            {product.original_price && (
+              <p className="text-slate-400 dark:text-gray-600 text-[11px] line-through mt-0.5 truncate">{product.original_price}</p>
             )}
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
-            {product.discount && (
+            {product.discount_percent && (
               <span className="text-[10px] font-bold px-2 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
-                {product.discount}
+                {product.discount_percent}
               </span>
             )}
             <Link
