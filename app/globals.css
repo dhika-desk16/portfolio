@@ -170,7 +170,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#f4f5f7] text-foreground;
   }
 
   html {

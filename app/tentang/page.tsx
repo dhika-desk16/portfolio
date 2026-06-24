@@ -1,3 +1,4 @@
+import StackedCards from '@/components/StackedCard'
 import {
   Fa7SolidHandshakeAngle,
   MaterialSymbolsLightbulb2,
@@ -101,9 +102,11 @@ const team = [
 
 export default function TentangPage() {
   return (
-    <main className="min-h-screen bg-[#f6f7fb] dark:bg-black">
+    <main className="min-h-screen bg-[#f4f5f7] dark:bg-black">
       <div className="fixed right-6 bottom-6 z-50 hidden lg:block">
-        <div
+
+
+        {/* <div
           className=" w-72 overflow-hidden rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A0A0A] shadow-2xl backdrop-blur-xl
     "
         >
@@ -158,21 +161,28 @@ export default function TentangPage() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+
+  
+        <StackedCards/>
       </div>
-      <section className="border-b border-slate-200/70 dark:border-white/5 bg-indigo-500 dark:bg-black">
-        <div className="mx-auto max-w-5xl px-6 py-24 text-center">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-white dark:text-indigo-400">
+      <section className="border-b border-slate-200/70 dark:border-white/5 bg-indigo-400 dark:bg-black">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-24 lg:py-28 text-center">
+          {/* Label - lebih responsif */}
+          <p className="mb-3 sm:mb-4 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em] text-white dark:text-indigo-400">
             Tentang Kami
           </p>
 
-          <h1 className="mb-6 text-4xl md:text-6xl font-bold text-white dark:text-white">
-            Membangun Produk Digital
-            <br />
-            yang Berdampak
+          {/* Heading dengan ukuran yang lebih progresif */}
+          <h1 className="mb-4 sm:mb-5 md:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white dark:text-white leading-[1.1] sm:leading-[1.2] md:leading-tight">
+            <span className="block sm:inline">Membangun Produk Digital</span>
+            <span className="block sm:inline">
+              <br className="hidden sm:block" /> yang Berdampak
+            </span>
           </h1>
 
-          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white dark:text-gray-400">
+          {/* Deskripsi dengan padding dan ukuran font yang responsif */}
+          <p className="mx-auto max-w-3xl px-2 sm:px-4 md:px-0 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-white dark:text-gray-300 md:dark:text-gray-400">
             Majakarsa Digital membantu bisnis, startup, institusi pendidikan,
             dan organisasi dalam merancang, membangun, serta mengembangkan
             solusi digital modern yang cepat, aman, dan berkelanjutan.
@@ -516,6 +526,8 @@ export default function TentangPage() {
           Mari Kita Buat →
         </a>
       </section>
-    </main>
+
+    </main >
+
   )
 }

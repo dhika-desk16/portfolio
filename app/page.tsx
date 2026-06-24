@@ -81,10 +81,10 @@ export default async function Page() {
         <div className="absolute inset-0">
           {/* Light Mode */}
           <div
-            className="absolute inset-0 bg-cover bg-indigo-100 bg-center bg-fixed dark:hidden"
-            style={{
-              backgroundImage: "url('/assets/pictures/background15.jpg')",
-            }}
+            className="absolute inset-0 bg-cover bg-indigo-400 bg-center bg-fixed dark:hidden"
+            // style={{
+            //   backgroundImage: "url('/assets/pictures/background17.jpg')",
+            // }}
           />
 
           {/* Dark Mode */}
@@ -159,14 +159,14 @@ export default async function Page() {
               powered by majakarsa
             </p>
 
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold text-slate-950 dark:text-white leading-tight mb-4 sm:mb-6 break-words">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold text-white dark:text-white leading-tight mb-4 sm:mb-6 break-words">
               MAJAKARSA
-              <span className="bg-gradient-to-r from-indigo-600 via-indigo-500 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 DIGITAL
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-gray-300 max-w-2xl dark:mx-auto mb-8 sm:mb-10 leading-relaxed">
+            <p className="text-base font-medium sm:text-lg md:text-2xl text-white dark:text-gray-300 max-w-2xl dark:mx-auto mb-8 sm:mb-10 leading-relaxed">
               Dari website, aplikasi mobile, hingga sistem enterprise - kami hadirkan
               produk digital berkualitas tinggi yang siap skalakan bisnis Anda.
             </p>
@@ -216,7 +216,7 @@ export default async function Page() {
           <TwoRowCarousel products={sampleProducts} />
         </ section >
 
-        <section className="relative z-10 bg-white dark:bg-black py-12 sm:py-24" >
+        <section className="relative z-10 bg-[#f4f5f7] dark:bg-black py-12 sm:py-24" >
           {/* <div
             className="absolute hidden dark:block inset-0 -z-50 bg-cover bg-center bg-fixed"
             style={{
@@ -391,7 +391,7 @@ export default async function Page() {
                   Membantu Membuat Web & App{' '}
                   <span className="">Custom Sesuai Branding</span> Kamu!
                 </h2>
-                <p className="text-primary text-sm leading-relaxed mb-5 sm:mb-6">
+                <p className="text-lg leading-relaxed font-medium mb-5 sm:mb-6 text-slate-200">
                   Layanan pembuatan website, aplikasi, dan sistem informasi sesuai
                   kebutuhan spesifik bisnis atau instansi Anda.
                 </p>
@@ -433,7 +433,7 @@ export default async function Page() {
                   Kita Juga Menyediakan{' '}
                   <span className="">Produk Siap Pakai!</span>
                 </h2>
-                <p className="text-primary text-sm leading-relaxed">
+                <p className="text-slate-200 text-sm leading-relaxed">
                   Kami menyediakan layanan pembuatan website, aplikasi, dan sistem
                   informasi yang dapat dicustom/disesuaikan.
                 </p>
@@ -441,7 +441,7 @@ export default async function Page() {
 
               <div>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">Pricelist</h3>
-                <p className="text-primary text-sm leading-relaxed mb-4">
+                <p className="text-slate-200 text-sm leading-relaxed mb-4">
                   Lihat daftar harga layanan Majakarsa Digital, mulai dari pembuatan
                   website, aplikasi, hingga sistem informasi.
                 </p>
@@ -468,7 +468,7 @@ export default async function Page() {
               backgroundImage: "url('/assets/pictures/background4.jpg')",
             }}
           />
-          <div className="absolute inset-0 -z-40 bg-white/90 dark:bg-black/80" />
+          <div className="absolute inset-0 -z-40 bg-[#f4f5f7] dark:bg-black/80" />
 
           <div
             className="absolute inset-0 -z-40 pointer-events-none hidden dark:block"
@@ -504,7 +504,7 @@ export default async function Page() {
         </section >
 
         {/* SPONSOR */}
-        <section id="sponsor" className="relative z-10 bg-slate-50 dark:bg-black py-12 sm:py-24 border-t border-slate-200 dark:border-white/5 overflow-hidden">
+        <section id="sponsor" className="relative z-10 bg-[#f4f5f7] dark:bg-black py-12 sm:py-24 border-t border-slate-200 dark:border-white/5 overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-[600px] h-[300px] bg-indigo-500/[0.07] dark:bg-indigo-500/[0.08] blur-[100px] rounded-full pointer-events-none" />
 
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6">

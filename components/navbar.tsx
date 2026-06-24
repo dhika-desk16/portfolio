@@ -10,6 +10,7 @@ const menuItems = [
   // { label: 'ARTIKEL', href: '/artikel' },
   { label: 'TENTANG', href: '/tentang' },
   { label: 'PRODUK', href: '/produk' },
+  { label: 'PRICELIST', href: '/pricelist' },
   { label: 'PORTFOLIO', href: '/portfolio' },
   { label: 'BUAT', href: '/buat', isNew: true },
 ]
@@ -52,9 +53,9 @@ export function Navbar() {
   return (
     <>
       {/* ── Sticky wrapper ── */}
-<div className="sticky top-0 z-50 isolate dark:px-3 dark:pt-3 sm:dark:px-4">
-  <nav
-    className={`
+      <div className="sticky top-0 z-50 isolate dark:px-3 dark:pt-3 sm:dark:px-4">
+        <nav
+          className={`
       mx-auto
       py-2 dark:py-0
       max-w-full dark:max-w-4xl dark:rounded-full
@@ -64,7 +65,7 @@ export function Navbar() {
       dark:shadow-[0_8px_32px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.12)]
       px-3 sm:px-6 md:px-8 lg:px-12 dark:px-12
     `}
-  >
+        >
           <div className="flex h-[52px] items-center justify-between gap-2 sm:gap-4">
 
             {/* ── Logo ── */}

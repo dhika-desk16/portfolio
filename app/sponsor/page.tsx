@@ -181,7 +181,23 @@ export default function SponsorPage() {
                                 </ul>
 
                                 <a
-                                    href="https://wa.me/6281234567890"
+                                    href={`https://wa.me/6285792743430?text=${encodeURIComponent(
+                                        `Halo Tim Majakarsa, Perkenalkan, saya tertarik untuk menjadi ${tier.name} dengan paket ${tier.price}${tier.period}.
+
+    Saya ingin mendapatkan informasi lebih lanjut mengenai:
+    • Benefit yang akan diperoleh
+    • Durasi sponsorship
+    • Mekanisme pembayaran
+    • Proses penayangan logo dan brand kami
+    • Ketentuan kerja sama lainnya
+    
+    Informasi perusahaan/brand:
+    Nama Brand:
+    Website:
+    Bidang Usaha:
+    Mohon dapat menghubungi saya untuk diskusi lebih lanjut.
+    Terima kasih.`
+                                    )}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`w-full text-center py-3 rounded-xl text-sm font-semibold transition-colors ${i === 1

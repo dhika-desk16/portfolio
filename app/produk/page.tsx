@@ -92,7 +92,7 @@ export default function ProdukPage() {
     <main className="min-h-screen bg-[#f4f5f7] dark:bg-black">
 
       {/* Header */}
-      <div className="bg-indigo-500 dark:bg-black">
+      <div className="bg-indigo-400 dark:bg-black">
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-10 sm:py-16 border-b pb-0">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div>
